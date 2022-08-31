@@ -4,7 +4,7 @@ import coverPhoto from '../images/cover.webp'
 function Hero () {
     return (
         <div className="hero">
-            <div className="hero__container">
+            <div className="hero__container hero__container--text">
                 <h1 className="hero__title">Title</h1>
                 <p className="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 <div className="hero__buttons">
@@ -13,7 +13,7 @@ function Hero () {
                 </div>
 
             </div>
-            <div className='hero__container'>
+            <div className='hero__container hero__container--img'>
                 <img className='hero__img' src={coverPhoto} alt='Cover photo' />
             </div>
         </div>

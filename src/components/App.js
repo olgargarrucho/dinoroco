@@ -15,11 +15,14 @@ function App() {
   return (
   <div className='page'>
       <Header />
+      <main>
       <Hero />
-      <Div photo={icon} photoName="Icon" title="Title One"  />
-      <Div photo={icon2} photoName="Icon2" title="Title Two"  />
-      <Div photo={icon3} photoName="Icon3" title="Title Three"  />
-
+      <div className='div'>
+        <Div photo={icon} photoName="Icon" title="Title One"  />
+        <Div photo={icon2} photoName="Icon2" title="Title Two"  />
+        <Div photo={icon3} photoName="Icon3" title="Title Three"  />
+      </div>
+      </main>
       
     
   </div>);
