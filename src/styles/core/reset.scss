@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Alegreya';
+  src: url('./AlegreyaSansSC-Medium.ttf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  :root {
+    font-size: 62.5%;
+  }

@@ -1,0 +1,51 @@
+@import '../core/variables.scss';
+
+.hero{
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    &__title{
+        font-size: 3rem;
+        color: $text_secondary_color;
+
+    }
+    &__text{
+        font-size: 1.4rem;
+        color: $text_secondary_color;
+
+    }
+    &__buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        line-height: 15px;
+        padding-top: 10px;
+
+        &--linkMore{
+            background-color: $primary_color;
+            width: 100px;
+            text-align: center;
+            padding: 7px;
+            border-radius: 20px;
+            
+
+        }
+        &--linkContact{
+            background-color: $text_primary_color;
+            width: 100px;
+            text-align: center;
+            padding: 7px;
+            border-radius: 20px;
+            
+
+
+        }
+    }
+}
