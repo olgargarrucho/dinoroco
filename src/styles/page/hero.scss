@@ -1,23 +1,48 @@
 @import '../core/variables.scss';
 
 .hero{
-    display: grid;
-    grid-template-columns: 0.6fr 0.4fr;
-    grid-template-rows: 1fr;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 100vw;
+    @media all and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 0.6fr 0.4fr;
+        grid-template-rows: 1fr;
+   }
+    @media all and (min-width: 1200px) {
+        
+   }
     &__container{
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        max-width: 100vw;
+       
+       
     }
     &__title{
-        font-size: 3rem;
+        font-size: 5rem;
         color: $text_secondary_color;
+        @media all and (min-width: 768px) {
+            font-size: 3rem;
+       }
+        @media all and (min-width: 1200px) {
+            font-size: 4rem;
+       }
 
     }
     &__text{
+        display: none;
         font-size: 1.4rem;
         color: $text_secondary_color;
+        @media all and (min-width: 768px) {
+            display: contents;
+            font-size: 1.4rem;
+            color: $text_secondary_color;
+       }
+        @media all and (min-width: 1200px) {
+            font-size: 1.8rem;
+       }
 
     }
     &__buttons{
@@ -25,27 +50,51 @@
         flex-direction: row;
         justify-content: center;
         gap: 30px;
-        line-height: 15px;
+        line-height: 20px;
         padding-top: 10px;
+        font-size: 1.6rem;
+        @media all and (min-width: 768px) {
+            font-size: 1.4rem;
+       }
+        @media all and (min-width: 1200px) {
+            font-size: 1.8rem;
+       }
 
         &--linkMore{
             background-color: $primary_color;
-            width: 100px;
+            width: 120px;
             text-align: center;
             padding: 7px;
             border-radius: 20px;
+            color: whitesmoke;
+            @media all and (min-width: 768px) {
+                width: 100px;
+           }
+            @media all and (min-width: 1200px) {
+                width: 120px;
+           }
             
 
         }
         &--linkContact{
             background-color: $text_primary_color;
-            width: 100px;
+            width: 120px;
             text-align: center;
             padding: 7px;
             border-radius: 20px;
-            
+            color: whitesmoke;
+            @media all and (min-width: 768px) {
+                width: 100px;
+           }
+            @media all and (min-width: 1200px) {
+                width: 120px;
+           }
 
 
         }
+    }
+    &__img {
+      padding: 7px;
+        
     }
 }

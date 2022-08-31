@@ -1,5 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import '../styles/page/hero.scss';
+import coverPhoto from '../images/cover.webp'
 
 function Hero () {
     return (
@@ -13,8 +13,9 @@ function Hero () {
                 </div>
 
             </div>
-            <img src='' alt='Cover photo' />
-
+            <div className='hero__container'>
+                <img className='hero__img' src={coverPhoto} alt='Cover photo' />
+            </div>
         </div>
     )
 }
