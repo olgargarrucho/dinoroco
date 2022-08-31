@@ -1,0 +1,43 @@
+@import '../core/variables.scss';
+
+.footer {
+    border-top: 1px solid rgba(128, 128, 128, 0.31);
+    min-height: 10vh;
+    width: 100vw;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    @media all and (min-width: 768px) {
+        flex-direction: row;
+        padding: 15px;
+    }
+    @media all and (min-width: 1200px) {
+        
+   }
+    &__copy {
+      font-size: 1.4rem;
+      color: $text_secondary_color;
+    }
+    &__rrss {
+      &--link {
+        color: $primary_color;
+        & .icon {
+          font-size: 2rem;
+          margin-right: 5px;
+          margin-top: 5px;
+          @media all and (min-width: 768px) {
+            font-size: 2.4rem;
+        }
+        @media all and (min-width: 1200px) {
+            font-size: 2.5rem;
+       }
+          &:hover {
+            color: $text_primary_color;
+          }
+        }
+      }
+    }
+  }

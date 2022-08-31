@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Hero from './Hero';
 import Div from './Div';
+import Footer from './Footer';
 import icon from '../images/icon.png';
 import icon2 from '../images/icon2.png';
 import icon3 from '../images/icon3.png';
@@ -23,6 +24,7 @@ function App() {
         <Div photo={icon3} photoName="Icon3" title="Title Three"  />
       </div>
       </main>
+      <Footer />
       
     
   </div>);
