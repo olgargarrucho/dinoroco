@@ -7,11 +7,12 @@ import Header from './Header';
 import Hero from './Hero';
 import Div from './Div';
 import Footer from './Footer';
-import icon from '../images/icon.png';
-import icon2 from '../images/icon2.png';
-import icon3 from '../images/icon3.png';
+import icon from '../images/icon.jpg';
+import icon2 from '../images/icon2.jpg';
+import icon3 from '../images/icon3.jpg';
 import AboutMore from './AboutMore';
 import Contact from './Contact';
+import Section from './Section';
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
               <Div photo={icon2} photoName="Icon2" title="Title Two"  />
               <Div photo={icon3} photoName="Icon3" title="Title Three"  />
             </div>
+            <Section title='Section One' className='left' />
+            <Section title='Section Two' className='right' />
           </>} />
           <Route path='/aboutus' element={<AboutMore />} />
           <Route path='/contact' element={<Contact />} />

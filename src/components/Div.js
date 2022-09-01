@@ -5,12 +5,14 @@ function Div (props) {
         <div className='div'>
             <div className="div__container">
                 <img className='div__img' src={props.photo} alt={props.photoName} />
-                <h3 className='div__title'>
+                <div className='div__texts'>
+                <h3 className='div__texts--title'>
                 {props.title}
                 </h3>
-                <p className='div__text'>
+                <p className='div__texts--text'>
                 {props.text}
                 </p>
+                </div>
             </div>
         </div>
     )
