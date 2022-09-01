@@ -1,0 +1,77 @@
+@import '../core/variables.scss';
+
+.contact{
+    width: 300px;
+    padding-top: 50px;
+    &__title{
+        font-size: 2.4rem;
+        color: $primary_color;
+        text-align: center;
+        font-family: $principal_font;
+        padding-bottom: 30px;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        font-family: $secondary_font;
+        color: $text_secondary_color;
+        padding-top: 20px;
+        
+        &--label{
+            text-align: left;
+            padding: 7px;
+            font-size: 1.4rem;
+            line-height: 25px;
+        }
+        &--input{
+            padding: 5px;
+            border: none;
+            color: $text_primary_color;
+            width: 280px;
+            
+        }
+        &--buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-top: 20px;
+            &-submit{
+                background-color: $primary_color;
+            width: 120px;
+            text-align: center;
+            padding: 7px;
+            border-radius: 20px;
+            color: whitesmoke;
+            border: none;
+
+            }
+            &-resset{
+                background-color: $text_primary_color;
+            width: 120px;
+            text-align: center;
+            padding: 7px;
+            border-radius: 20px;
+            color: whitesmoke;
+            border: none;
+            }
+        }
+    }
+    &__footer{
+        display: flex;
+        justify-content: right;
+        padding-top: 30px;
+
+        &--text{
+            font-size: 1.3rem;
+            font-family: $principal_font;
+            color: $text_primary_color;
+        }
+        
+    }
+    &__icon {
+    color: $text_primary_color;
+    font-size: 2rem;
+    padding-top: 30px;
+    }
+}

@@ -2,16 +2,35 @@
     width: 100vw;
     min-height: 10vh;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    
     &__logo {
-        width: 120px;
-        height: 100px;
+        width: 70px;
+        height: 40px;
         @media all and (min-width: 768px) {
-            width: 140px;
-            height: 120px;
+            width: 120px;
+            height: 60px;
        }
         @media all and (min-width: 1200px) {
-            width: 160px;
+            width: 210px;
             height: 140px;
        }
+    }
+    &__texts{
+        display: flex;
+        flex-direction: column;
+        width: 70px;
+        text-align: center;
+        display: none;
+        
+        &--title{
+            font-size: 1.4rem;
+        }
+        &--subtitle{
+            font-size: 1.2rem;
+            
+        }
     }
 }

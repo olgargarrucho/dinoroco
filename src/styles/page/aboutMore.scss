@@ -1,0 +1,43 @@
+@import '../core/variables.scss';
+
+.about{
+    width: 300px;
+    padding-top: 50px;
+    &__title{
+        font-size: 2.4rem;
+        color: $primary_color;
+        text-align: center;
+        font-family: $principal_font;
+        padding-bottom: 30px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $secondary_font;
+        color: $text_secondary_color;
+        &--paragraph{
+            text-align: center;
+            padding: 7px;
+            font-size: 1.4rem;
+
+        }
+    }
+    &__footer{
+        display: flex;
+        justify-content: right;
+        padding-top: 30px;
+
+        &--text{
+            font-size: 1.3rem;
+            font-family: $principal_font;
+            color: $text_primary_color;
+        }
+        
+    }
+    &__icon {
+    color: $text_primary_color;
+    font-size: 2rem;
+    padding-top: 30px;
+    }
+}

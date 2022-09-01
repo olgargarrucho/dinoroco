@@ -3,6 +3,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
+}
+
+.main{
+    min-height: 70vh;
 }
 
 .div {

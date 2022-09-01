@@ -10,19 +10,27 @@ import Footer from './Footer';
 import icon from '../images/icon.png';
 import icon2 from '../images/icon2.png';
 import icon3 from '../images/icon3.png';
+import AboutMore from './AboutMore';
+import Contact from './Contact';
 
 function App() {
 
   return (
   <div className='page'>
       <Header />
-      <main>
-      <Hero />
-      <div className='div'>
-        <Div photo={icon} photoName="Icon" title="Title One"  />
-        <Div photo={icon2} photoName="Icon2" title="Title Two"  />
-        <Div photo={icon3} photoName="Icon3" title="Title Three"  />
-      </div>
+      <main className='main'>
+        <Routes>
+          <Route path='/' element={<>
+            <Hero />
+            <div className='div'>
+              <Div photo={icon} photoName="Icon" title="Title One"  />
+              <Div photo={icon2} photoName="Icon2" title="Title Two"  />
+              <Div photo={icon3} photoName="Icon3" title="Title Three"  />
+            </div>
+          </>} />
+          <Route path='/aboutus' element={<AboutMore />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes> 
       </main>
       <Footer />
       
