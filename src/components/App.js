@@ -5,17 +5,33 @@ import ls from '../services/localStoraged';
 import { Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Hero from './Hero';
-import Div from './Div';
 import Footer from './Footer';
-import icon from '../images/icon.jpg';
-import icon2 from '../images/icon2.jpg';
-import icon3 from '../images/icon3.jpg';
 import AboutMore from './AboutMore';
 import Contact from './Contact';
-import Section from './Section';
 
 function App() {
+  const [dataContact, setDataContact] = useState ({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  })
 
+  const handleInput = (name, value) => {
+    setDataContact({
+      ...dataContact,
+      [name]: value,
+    })
+  }
+
+  const handleResset = () => {
+    setDataContact({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    })
+  }
   return (
   <Routes>
           <Route path='/' element={<div className='page'>
@@ -36,7 +52,7 @@ function App() {
           <Route path='/contact' element={<div className='section-home'>
             <Header />
             <main className='main'>
-            <Contact />
+            <Contact dataContact={dataContact} handleInput={handleInput} handleResset={handleResset} />
             </main>
             <Footer />
             </div>} />
