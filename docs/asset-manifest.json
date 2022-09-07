@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.9a059fdf.css",
-    "main.js": "./static/js/main.f7ca5cae.js",
+    "main.css": "./static/css/main.66be104c.css",
+    "main.js": "./static/js/main.1a26b6ff.js",
     "static/media/icon3.jpg": "./static/media/icon3.09c1aace2101ff8720ef.jpg",
-    "static/media/logo.png": "./static/media/logo.3ed7213455fcbcd360cc.png",
+    "static/media/logo.png": "./static/media/logo.d2881c23d66b1776001e.png",
     "static/media/cover.png": "./static/media/cover.7555b1d2dd0718bc256b.png",
     "static/media/AlegreyaSansSC-Medium.ttf": "./static/media/AlegreyaSansSC-Medium.43fde0ccd18166e5c7b1.ttf",
     "static/media/icon2.jpg": "./static/media/icon2.c750a3398ca7df734a06.jpg",
     "static/media/icon.jpg": "./static/media/icon.0f4ad4276b69864a2e90.jpg",
     "index.html": "./index.html",
-    "main.9a059fdf.css.map": "./static/css/main.9a059fdf.css.map",
-    "main.f7ca5cae.js.map": "./static/js/main.f7ca5cae.js.map"
+    "main.66be104c.css.map": "./static/css/main.66be104c.css.map",
+    "main.1a26b6ff.js.map": "./static/js/main.1a26b6ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a059fdf.css",
-    "static/js/main.f7ca5cae.js"
+    "static/css/main.66be104c.css",
+    "static/js/main.1a26b6ff.js"
   ]
 }
