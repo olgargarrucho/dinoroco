@@ -1,10 +1,9 @@
 @import '../core/variables.scss';
 
 .footer {
-    //border-top: 1px solid rgba(128, 128, 128, 0.31);
     min-height: 10vh;
     max-width: 100vw;
-    padding: 25px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,26 +13,32 @@
     @media all and (min-width: 768px) {
         flex-direction: row;
         padding: 15px;
-    }
-    @media all and (min-width: 1200px) {
-        
-   }
+    } 
    &__container{
-    margin-top: 50px;
+    padding-top: 10px;
      background-color: $primary_color;
-     height: 100px;
+     height: 83px;
      width: 100vw;
     border-radius: 50% 0% 0% 0%;
     display: flex;
     flex-direction: column-reverse;
     gap: 7px;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    @media all and (min-width: 1200px) {
+        align-items: left;
+    }
       &--copy {
       font-size: 1.4rem;
       color: $text_secondary_color;
       text-align: center;
       font-family: $principal_font;
+      @media all and (min-width: 768px) {
+        font-size: 1.7rem;
+      }
+      @media all and (min-width: 1200px){
+        font-size: 1.6rem;
+      }
       }
     }
     &__menu{
@@ -42,13 +47,21 @@
       width: 50vw;
       align-items: flex-end;
       gap: 7px;
-      &--item{
-        
+      @media all and (min-width: 1200px) {
+        gap: 5px;
       }
       &--link{
         color: $text_secondary_color;
         font-size: 1.5rem;
         font-family: $principal_font;
+        @media all and (min-width: 768px) {
+          font-size: 2rem;
+          padding-right: 10px;
+      }
+      @media all and (min-width: 1200px) {
+        padding-right: 20px;
+        font-size: 1.8rem;
+      }
       }
     }
     &__rrss {
@@ -61,10 +74,10 @@
           margin-right: 5px;
           margin-top: 5px;
           @media all and (min-width: 768px) {
-            font-size: 2.4rem;
+            font-size: 3rem;
         }
         @media all and (min-width: 1200px) {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
        }
           &:hover {
             color: $text_primary_color;

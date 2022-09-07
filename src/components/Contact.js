@@ -18,7 +18,7 @@ function Contact () {
                         <input type='text' name='subject' id='subject' placeholder='Ex. Proyect offer' className='contact__form--input' />
                     </label>
                     <label htmlFor='description' className='contact__form--label'>Message:
-                        <textarea rows='5' cols='30' name='description' id='description' placeholder='Ex. I would like more information about...' className='contact__form--input'/>
+                        <textarea name='description' id='description' placeholder='Ex. I would like more information about...' className='contact__form--textarea'/>
                     </label>
                     <div className='contact__form--buttons'>
                         <button type='submit' className='contact__form--buttons-submit'>Send</button> 

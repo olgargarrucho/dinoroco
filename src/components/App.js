@@ -17,28 +17,30 @@ import Section from './Section';
 function App() {
 
   return (
-  <div className='page'>
-      <Header />
-      <main className='main'>
-        <Routes>
-          <Route path='/' element={<>
+  <Routes>
+          <Route path='/' element={<div className='page'>
+            <Header />
+            <main className='main'>
             <Hero />
-            <div className='div'>
-              <Div photo={icon} photoName="Icon" title="Title One"  />
-              <Div photo={icon2} photoName="Icon2" title="Title Two"  />
-              <Div photo={icon3} photoName="Icon3" title="Title Three"  />
-            </div>
-            <Section title='Section One' className='left' />
-            <Section title='Section Two' className='right' />
-          </>} />
-          <Route path='/aboutus' element={<AboutMore />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes> 
-      </main>
-      <Footer />
-      
-    
-  </div>);
+            </main>
+            <Footer />
+          </div>} />
+          <Route path='/aboutus' element={<div className='section-home'>
+          
+            <Header />
+            <main className='main'>
+            <AboutMore />
+            </main>
+            <Footer />
+            </div>} />
+          <Route path='/contact' element={<div className='section-home'>
+            <Header />
+            <main className='main'>
+            <Contact />
+            </main>
+            <Footer />
+            </div>} />
+  </Routes>);
 }
 
 export default App;

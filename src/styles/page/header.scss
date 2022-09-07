@@ -1,36 +1,20 @@
 .header {
     width: 100vw;
     min-height: 10vh;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 7px;
     
     &__logo {
-        width: 70px;
-        height: 40px;
+        width: 180px;
+        height: 150px;
         @media all and (min-width: 768px) {
-            width: 120px;
-            height: 60px;
+            width: 250px;
+            height: 220px;
        }
         @media all and (min-width: 1200px) {
-            width: 210px;
-            height: 140px;
+            width: 230px;
+            height: 210px;
        }
-    }
-    &__texts{
-        display: flex;
-        flex-direction: column;
-        width: 70px;
-        text-align: center;
-        display: none;
-        
-        &--title{
-            font-size: 1.4rem;
-        }
-        &--subtitle{
-            font-size: 1.2rem;
-            
-        }
     }
 }
