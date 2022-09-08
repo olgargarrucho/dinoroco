@@ -47,8 +47,10 @@
       width: 50vw;
       align-items: flex-end;
       gap: 7px;
+      padding-right: 30px;
       @media all and (min-width: 1200px) {
         gap: 5px;
+        padding-right: 100px;
       }
       &--link{
         color: $text_secondary_color;

@@ -28,16 +28,16 @@ function Contact (props) {
                 <h2 className='contact__title'>Contact form</h2>
                 <form className="contact__form" onSubmit={handleSubmit}>
                     <label htmlFor='name' className='contact__form--label' >Name:
-                        <input type='text' name='name' id='name' placeholder='Ex. María García' className='contact__form--input' value={props.dataContact.name} onChange={handleInput} />
+                        <input type='text' name='name' id='name' placeholder='Ex. Mario GarcíaRodríguez' className='contact__form--input' value={props.dataContact.name} onChange={handleInput} />
                     </label>
                     <label htmlFor='email'className='contact__form--label'>Email:
-                        <input type='email' name='email' id='email' placeholder='Ex. maria.garcia@example.com' className='contact__form--input' value={props.dataContact.email} onChange={handleInput} />
+                        <input type='email' name='email' id='email' placeholder='Ex. mario.rodriguez@example.com' className='contact__form--input' value={props.dataContact.email} onChange={handleInput} />
                     </label>
                     <label htmlFor='subject' className='contact__form--label' >Subject:
-                        <input type='text' name='subject' id='subject' placeholder='Ex. Proyect offer' className='contact__form--input' value={props.dataContact.subject} onChange={handleInput} />
+                        <input type='text' name='subject' id='subject' placeholder='Ex. Project info' className='contact__form--input' value={props.dataContact.subject} onChange={handleInput} />
                     </label>
                     <label htmlFor='message' className='contact__form--label'>Message:
-                        <textarea name='message' id='message' placeholder='Ex. I would like more information about...' className='contact__form--textarea' value={props.dataContact.message} onChange={handleInput}/>
+                        <textarea name='message' id='message' placeholder='Ex. I would like more info about...' className='contact__form--textarea' value={props.dataContact.message} onChange={handleInput}/>
                     </label>
                     <div className='contact__form--buttons'>
                         <button type='submit' className='contact__form--buttons-submit' onClick={handleSubmit}>Send</button> 

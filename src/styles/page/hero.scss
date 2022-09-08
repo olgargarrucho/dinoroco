@@ -9,10 +9,10 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        min-height: 80vh;
+        min-height: 70vh;
     }
     @media all and (min-width: 1200px) {
-        
+        min-height: 80vh;
        
    }
     &__container{
@@ -43,9 +43,9 @@
             @media all and (min-width: 768px) {
             background-position: left;
             background-size: cover;
-            width: 440px;
+            width: 350px;
             height: 700px;
-            transform: translate(220px,30px);
+            transform: translate(205px,30px);
             }
             @media all and (min-width: 1200px) {
             transform: translate(350px, -50px);
@@ -72,7 +72,7 @@
             font-size: 6rem;
        }
        &--spam{
-           color: $text_secondary_color;
+           color: $primary_color;
        }
     }
     &__text{
@@ -106,6 +106,7 @@
         padding: 20px;
         font-size: 1.8rem;
         font-family: $secondary_font;
+        display: none;
         @media all and (min-width: 768px) {
             font-size: 2.2rem;
             line-height: 30px;
