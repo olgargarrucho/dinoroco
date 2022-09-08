@@ -22,6 +22,7 @@
         }
         @media all and (min-width: 1200px) {
             font-size: 4.2rem;
+            padding-bottom: 5px;
         }
     }
     &__form{
@@ -79,6 +80,7 @@
             padding-top: 20px;
             @media all and (min-width: 1200px) {
                 gap: 50px;
+                padding-top: 10px;
             }
             &-submit{
                 background-color: $primary_color;
@@ -113,12 +115,14 @@
     &__icon {
     color: $text_primary_color;
     font-size: 2rem;
-    padding-top: 10px;
+    padding-top: 20px;
     @media all and (min-width: 768px) {
         font-size: 2.7rem; 
+        padding-top: 70px;
     }
     @media all and (min-width: 1200px) {
         font-size: 3rem; 
+        padding-top: 80px;
     }
     }
 }
