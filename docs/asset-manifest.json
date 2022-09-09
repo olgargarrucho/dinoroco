@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.a942bd42.css",
+    "main.css": "./static/css/main.1e123724.css",
     "main.js": "./static/js/main.2452aace.js",
     "static/media/logo.png": "./static/media/logo.3ed7213455fcbcd360cc.png",
     "static/media/cover.png": "./static/media/cover.7555b1d2dd0718bc256b.png",
     "static/media/AlegreyaSansSC-Medium.ttf": "./static/media/AlegreyaSansSC-Medium.43fde0ccd18166e5c7b1.ttf",
     "index.html": "./index.html",
-    "main.a942bd42.css.map": "./static/css/main.a942bd42.css.map",
+    "main.1e123724.css.map": "./static/css/main.1e123724.css.map",
     "main.2452aace.js.map": "./static/js/main.2452aace.js.map"
   },
   "entrypoints": [
-    "static/css/main.a942bd42.css",
+    "static/css/main.1e123724.css",
     "static/js/main.2452aace.js"
   ]
 }
