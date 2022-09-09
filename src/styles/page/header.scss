@@ -17,6 +17,12 @@
     @media all and(min-width: 1700px){
         padding-left: 300px;
     }
+    @media all and(min-width: 2000px){
+        padding-left: 480px;
+    }
+    @media all and(min-width: 2500px){
+        padding-left: 750px;
+    }
     
     &__logo {
         width: 180px;
