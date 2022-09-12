@@ -19,7 +19,7 @@
     background-color: $primary_color;
     height: 83px;
     width: 100vw;
-    border-radius: 50% 0% 0% 0%;
+    border-radius: 65% 0% 0% 0%;
     display: flex;
     flex-direction: column-reverse;
     gap: 7px;
@@ -73,7 +73,7 @@
       & .icon {
         font-size: 2.3rem;
         margin-right: 5px;
-        margin-top: 5px;
+        margin-top: 9px;
         @media all and (min-width: 768px) {
           font-size: 3rem;
         }
