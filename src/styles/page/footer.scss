@@ -15,9 +15,9 @@
     padding: 15px;
   }
   &__container {
-    padding-top: 10px;
+    margin-top: 10px;
     background-color: $primary_color;
-    height: 83px;
+    //height: 83px;
     width: 100vw;
     border-radius: 65% 0% 0% 0%;
     display: flex;
@@ -45,7 +45,7 @@
     flex-direction: column;
     width: 50vw;
     align-items: flex-end;
-    gap: 7px;
+    gap: 4px;
     padding-right: 30px;
     @media all and (min-width: 768px) {
       gap: 5px;
@@ -54,7 +54,7 @@
     }
     &--link {
       color: $text_secondary_color;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-family: $principal_font;
       @media all and (min-width: 768px) {
         font-size: 2rem;

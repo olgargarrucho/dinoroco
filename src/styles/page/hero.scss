@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   width: 350px;
-  padding: 10px 25px 20px;
+  padding: 10px 25px;
   height: 60vh;
   @media all and (min-width: 768px) {
     width: 500px;
@@ -52,7 +52,7 @@
     }
   }
   &__img {
-    width: 300px;
+    width: 220px;
     @media all and (min-width: 768px) {
       width: 400px;
     }
