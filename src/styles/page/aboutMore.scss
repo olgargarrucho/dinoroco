@@ -1,78 +1,76 @@
-@import '../core/variables.scss';
+@import "../core/variables.scss";
 
-.about{
-    width: 300px;
-    padding-top: 20px;
+.about {
+  width: 300px;
+  padding-top: 20px;
+  @media all and (min-width: 768px) {
+    width: 600px;
+    min-height: 80vh;
+  }
+  @media all and (min-width: 1200px) {
+    width: 900px;
+    padding-top: 0px;
+  }
+  &__title {
+    font-size: 2.4rem;
+    color: $primary_color;
+    text-align: center;
+    font-family: $principal_font;
+    padding-bottom: 30px;
     @media all and (min-width: 768px) {
-        width: 600px; 
-        min-height: 80vh;
+      font-size: 3.6rem;
     }
     @media all and (min-width: 1200px) {
-        width: 900px;
-        padding-top: 0px;
+      font-size: 4.2rem;
     }
-    &__title{
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $secondary_font;
+    color: $text_secondary_color;
+    &--paragraph {
+      text-align: center;
+      padding: 7px;
+      font-size: 1.4rem;
+      @media all and (min-width: 768px) {
+        font-size: 2rem;
+      }
+      @media all and (min-width: 1200px) {
         font-size: 2.4rem;
-        color: $primary_color;
-        text-align: center;
-        font-family: $principal_font;
-        padding-bottom: 30px;
-        @media all and (min-width: 768px) {
-            font-size: 3.6rem;
-        }
-        @media all and (min-width: 1200px) {
-            font-size: 4.2rem;
-        }
-        
+      }
     }
-    &__text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: $secondary_font;
-        color: $text_secondary_color;
-        &--paragraph{
-            text-align: center;
-            padding: 7px;
-            font-size: 1.4rem;
-            @media all and (min-width: 768px) {
-                font-size: 2rem;
-            }
-            @media all and (min-width: 1200px) {
-                font-size: 2.4rem;
-            }
-        }
-    }
-    &__footer{
-        display: flex;
-        justify-content: right;
-        padding-top: 30px;
+  }
+  &__footer {
+    display: flex;
+    justify-content: right;
+    padding-top: 30px;
 
-        &--text{
-            font-size: 1.4rem;
-            font-family: $principal_font;
-            color: $text_primary_color;
-            font-weight: 400;
-            @media all and (min-width: 768px) {
-                font-size: 2rem;
-            }
-            @media all and (min-width: 1200px) {
-                font-size: 2.4rem;
-            }
-        }
-        
+    &--text {
+      font-size: 1.4rem;
+      font-family: $principal_font;
+      color: $text_primary_color;
+      font-weight: 400;
+      @media all and (min-width: 768px) {
+        font-size: 2rem;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 2.4rem;
+      }
     }
-    &__icon {
+  }
+  &__icon {
     color: $text_primary_color;
     font-size: 2rem;
     padding-top: 20px;
     @media all and (min-width: 768px) {
-        font-size: 2.7rem; 
-        padding-top: 70px;
+      font-size: 2.7rem;
+      padding-top: 70px;
     }
     @media all and (min-width: 1200px) {
-        font-size: 3rem; 
-        padding-top: 80px;
+      font-size: 3rem;
+      padding-top: 80px;
     }
-    }
+  }
 }

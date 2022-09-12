@@ -1,157 +1,63 @@
-@import '../core/variables.scss';
+@import "../core/variables.scss";
 
-.hero{
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    min-height: 70vh;
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  padding: 10px 25px 20px;
+  height: 60vh;
+  @media all and (min-width: 768px) {
+    width: 500px;
+    gap: 20px;
+  }
+  @media all and (min-width: 1100px) {
+    width: 90vw;
+    flex-direction: row;
+    gap: 80px;
+    padding-left: 100px;
+  }
+  &__container {
+    &--text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media all and (min-width: 1200px) {
+        width: 400px;
+      }
+    }
+    &--img {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__text {
+    font-size: 1.6rem;
+    font-family: $secondary_font;
+    color: $text_secondary_color;
+    text-align: center;
+    padding: 10px;
     @media all and (min-width: 768px) {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        min-height: 70vh;
+      font-size: 2rem;
     }
     @media all and (min-width: 1200px) {
-        min-height: 80vh;
-       
-   }
-    &__container{
-        display: flex;
-        flex-direction: column;
-        max-width: 100vw;
-        &--text{
-        @media all and (min-width: 768px) {
-            max-width: 45vw;
-            position: absolute;
-            transform: translate(-120px);
-        }
-        @media all and (min-width: 1200px) {
-            transform: translate(-200px, -50px);
-            width: 600px;        
-        }
-        }
-        &--img{
-            background-image: url("../../images/cover.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 280px;
-            width: 350px;
-            position: absolute;
-            transform: translate(0px,330px);
-            overflow-x: hidden;
-            @media all and (min-width: 768px) {
-            background-position: left;
-            background-size: cover;
-            width: 350px;
-            height: 700px;
-            transform: translate(205px,30px);
-            }
-            @media all and (min-width: 1200px) {
-            transform: translate(350px, -50px);
-               width: 500px;
-               height: 500px;
-               background-size: contain;
-               
-           }
-        }
-       
-       
+      font-size: 2.2rem;
     }
-    &__title{
-        font-size: 4rem;
-        font-family: $principal_font;
-        color: $primary_color;
-        text-align: center;
-        padding: 0px 2px 10px;
-        @media all and (min-width: 768px) {
-            font-size: 7rem;
-            text-align: left;
-       }
-        @media all and (min-width: 1200px) {
-            font-size: 6rem;
-       }
-       &--spam{
-           color: $primary_color;
-       }
+    &--spam {
+      color: $primary_color;
     }
-    &__text{
-        font-size: 1.6rem;
-        font-family: $secondary_font;
-        color: $text_secondary_color;
-        text-align: center;
-        padding: 10px;
-        @media all and (min-width: 768px) {
-            font-size: 2rem;
-            color: $text_secondary_color;
-            text-align: left;
-       }
-        @media all and (min-width: 1200px) {
-            font-size: 2.2rem;
-       }
-       &--spam{
-           color: $primary_color;
-       }
-       &--spamDate{
-           color: $text_primary_color;
-       }
-
+    &--spamDate {
+      color: $text_primary_color;
     }
-    &__buttons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 30px;
-        line-height: 20px;
-        padding: 20px;
-        font-size: 1.8rem;
-        font-family: $secondary_font;
-        display: none;
-        @media all and (min-width: 768px) {
-            font-size: 2.2rem;
-            line-height: 30px;
-       }
-        @media all and (min-width: 1200px) {
-            font-size: 2rem;
-            line-height: 30px;
-            justify-content: flex-start;
-       }
-
-        &--linkMore{
-            background-color: $primary_color;
-            width: 120px;
-            text-align: center;
-            padding: 7px;
-            border-radius: 20px;
-            color: whitesmoke;
-            @media all and (min-width: 768px) {
-                width: 140px;
-                border-radius: 40px;
-           }
-            @media all and (min-width: 1200px) {
-                width: 150px;
-                border-radius: 60px;
-           }
-            
-
-        }
-        &--linkContact{
-            background-color: $text_primary_color;
-            width: 120px;
-            text-align: center;
-            padding: 7px;
-            border-radius: 20px;
-            color: whitesmoke;
-            @media all and (min-width: 768px) {
-                width: 140px;
-                border-radius: 40px;
-           }
-            @media all and (min-width: 1200px) {
-                width: 150px;
-                border-radius: 60px;
-           }
-
-
-        }
+  }
+  &__img {
+    width: 300px;
+    @media all and (min-width: 768px) {
+      width: 400px;
     }
+    @media all and (min-width: 1200px) {
+      width: 450px;
+    }
+  }
 }
